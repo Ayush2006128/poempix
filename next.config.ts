@@ -17,6 +17,9 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
     ],
+    // For `next/image` with data URIs, no specific configuration for `dangerouslyAllowSVG` or `contentSecurityPolicy`
+    // is usually needed unless SVGs are directly embedded or strict CSPs are in place.
+    // Data URIs (e.g., `data:image/png;base64,...`) are generally supported.
   },
 };
 
